@@ -65,7 +65,12 @@ To set up an NFS server, follow these steps:
 | **crossmnt** | Allows NFS clients to access **mounted filesystems** under the export. |
 | **nohide** | Makes nested NFS mounts visible under the parent export (NFSv3). |
 
-
+- NFS server uses the following default settings for each exported directory"
+  * ro
+  * sync
+  * wdelay
+  * root_squash
+  
 
 What is root squashing?
 -------------
