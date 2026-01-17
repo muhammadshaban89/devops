@@ -150,7 +150,9 @@ Note :
 
 - Configure your firewall to allow NFS traffic:
 ```
-	firewall-cmd --add-service=nfs --permanent sudo firewall-cmd --reload
+	firewall-cmd --add-service=nfs --permanent sudo
+
+	firewall-cmd --reload
 ```
 
 👉Follow my LinkdIn Profile: www.linkedin.com/in/muhammad-shaban-45577719a
