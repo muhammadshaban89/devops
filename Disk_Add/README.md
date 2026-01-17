@@ -67,6 +67,8 @@ After unmounting, run:
 This command tells the kernel to remove the device from its list. Replace sdX with the correct device name (e.g., sdb).
 
 
+---------
+
 👉Follow my LinkdIn Profile: www.linkedin.com/in/muhammad-shaban-45577719a
 
 👉Youtube Channel: http://www.youtube.com/@engrm.shaban5099
