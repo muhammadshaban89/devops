@@ -41,8 +41,8 @@ To set up an NFS server, follow these steps:
 
 
 **Some important Points**
-    ----
-
+  
+-----
 | Option | Description |
 |--------|-------------|
 | **ro** | Export directory as **read‑only**. Clients cannot write. |
