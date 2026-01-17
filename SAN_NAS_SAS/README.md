@@ -39,6 +39,8 @@
 
 - **SAN vs NAS**: Both are networked, but SAN is block-level (like a virtual disk), while NAS is file-level (like a shared folder).
 - **SAS vs SAN**: SAS is a **hardware interface**, SAN is a **network architecture**.
+- SAN (Storage Area Network) is a network architecture that provides block storage to servers over Fibre Channel or iSCSI.
+- SAS (Serial Attached SCSI) is a physical interface used to connect disks to storage controllers inside storage arrays.
 
 ---
 
