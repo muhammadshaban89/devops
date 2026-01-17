@@ -38,9 +38,10 @@ To set up an NFS server, follow these steps:
 	 exportfs -arv
 
 **Note: instead of IP you can mention * for all networks , a single host IP , or a specific Network with prefix.**
-----
+
 
 **Some important Points**
+    ----
 
 | Option | Description |
 |--------|-------------|
