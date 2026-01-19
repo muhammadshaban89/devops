@@ -69,7 +69,11 @@ sudo systemctl enable --now target.service
   - Installs the management tool.  
   - Starts the LIO target framework and ensures it comes up on boot.
 
-### 4.2 Prepare backing storage
+### 4.2 Prepare backing storage ----(Section-1) 
+
+**Note**
+
+*If you want to you a block storage as backing storage follow "section-2" in same document.*
 
 Example: create a 10 GB file to act as a virtual disk.
 
@@ -327,6 +331,8 @@ For production, you’d usually protect the target with CHAP:
 - On the **initiator**: set the same credentials using `iscsiadm` node parameters.
 
 --------------------------------------------------------------------------------
+
+### Section-2
 
 - if you want to use **block storage** instead of a **file‑backed LUN**, the setup becomes even cleaner.  
 - You simply expose a **real block device** (like `/dev/sdb`) directly through the iSCSI target.
