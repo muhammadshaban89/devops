@@ -80,7 +80,7 @@ ls
 - Client Terminal:
 ```bash
 cat /etc/iscsi/initiatorname.iscsi
-cp /etc/iscsi/initiatorname.iscsi
+
 ````
 - Host Terminal: where you left before moving to client terminal:
 ```bash
