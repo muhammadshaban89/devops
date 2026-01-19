@@ -21,6 +21,9 @@ install iscsi-initiator-utils
 **3: Enter targetcli shell.**
 ```bash
 targetcli
+```
+-
+```
 ls
 ```
 - It will show:
