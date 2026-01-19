@@ -188,6 +188,42 @@ mkdir aa bb cc dd
 
 ls -lh
 ```
+
+- **To log out of the active session:**
+```bash
+sudo iscsiadm -m node -T iqn.2026-01.sa.lab:storage.target01 -p 192.168.10.10 --logout
+```
+
+What this does:
+• 	Terminates the iSCSI session
+
+• 	Removes the LUN from  (e.g.,  disappears)
+
+• 	Ensures the initiator is no longer connected to the target
+You can verify with:
+```bash
+sudo iscsiadm -m session
+```
+
+- **Remove the discovered target (delete node record)**
+  
+- Discovery creates a node record under  `/etc/iscsi/nodes/`.
+.
+- If you want to remove it completely:
+
+```bash
+sudo iscsiadm -m node -T iqn.2026-01.sa.lab:storage.target01 -p 192.168.10.10 -o delete
+```
+
+What this does:
+
+- Deletes the saved configuration for that target
+- Removes auto‑login settings
+- Removes CHAP settings (if configured)
+- Removes the target from the initiator’s database
+After this, the initiator “forgets” the target.
+
+
 👉Follow my LinkdIn Profile: www.linkedin.com/in/muhammad-shaban-45577719a
 
 👉Youtube Channel: http://www.youtube.com/@engrm.shaban5099
